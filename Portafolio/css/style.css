@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #090E16;
+    font-family: Helvetica;
+    color: white;
+}
+
+nav{
+    margin: 30px 100px;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: rgba(123, 74, 226, 5%);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav-list{
+ list-style: none;
+ display: flex;
+ gap: 20px;
+}
+
+.nav-list > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list > li > a:hover{
+    color: #7B4AE2;
+}
+
+main{
+    height: 80vh;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gretting{
+    background-color: rgba(123, 74, 226, 5%);
+    color: #7B4AE2;
+    padding: 8px;
+    border-radius: 16px;
+}
+
+.title{
+    font-size: 52px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.description{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 50%);
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.social-links{
+    display: flex;
+    gap: 17px;
+}
+
+.cv{
+    margin-right: 20px;
+    color: #7B4AE2;
+    font-size: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.cv > p > a{
+    text-decoration: none;
+}
+
+.chat{
+    padding: 10px;
+    color: #7B4AE2;
+    font-size: 20px;
+    margin-top: 20px;
+    border: solid 1px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat > p > a{
+    text-decoration: none;   
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.foto-perfil > img{
+    border-radius: 50%;
+}
+
+.information > h2{
+    font-size: 48px;
+    margin-top: 15px;
+}
+
+.information > p{
+    color: rgba(255, 255, 255, 50%);
+}
+
+.name{
+    margin-top: 15px;
+}
+
+.about-me{
+    color: rgba(255, 255, 255, 50%);
+    margin-top: 25px;
+}
+
+.end{
+    margin-top: 25px;
+}
