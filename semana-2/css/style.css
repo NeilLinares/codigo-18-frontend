@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*esta opcion hace que el borde sea interno y no externo*/
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  background-color: #c3e3e6;
+}
+
+input,
+button {
+  font-family: "Space Mono", monospace;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 50px;
+}
+
+form {
+  display: flex;
+  background-color: white;
+  border-radius: 16px;
+  padding: 40px;
+  gap: 30px;
+  width: 800px;
+}
+
+form > div {
+  /*flex : 1 hace que ambos midan el mismo ancho*/
+  flex: 1;
+}
+
+.container-input {
+  background-color: #f3f8fb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.container-input > input {
+  border: none;
+  /*al hacer clic sobre el no haga nada, ni tenga color*/
+  outline: none;
+  /*el texto se vaa la izquierda*/
+  text-align: right;
+  /*opcines de background y este hace que sea transparente*/
+  background-color: transparent;
+}
+
+.text-title {
+  font-size: 14px;
+  color: #9fb1af;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.container-percentage {
+  display: flex;
+  /*hace que se respete el tamaño de cada elemento*/
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+/*poner * hace que seleccione todos los elementos*/
+.container-percentage > * {
+  width: 30%;
+  margin-bottom: 5%;
+  height: 35px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #00474b;
+  border-radius: 5px;
+}
+
+.container-percentage > input {
+  color: #4f6c68;
+  background-color: #f3f8fb;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.container-percentage > *:hover {
+  color: #004648;
+  background-color: #26c2ad;
+}
+
+.container-amount {
+  background-color: #00474b;
+  border-radius: 16px;
+  color: white;
+}
+
+.tip-amount {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.span {
+  color: #609498;
+  font-size: 14px;
+}
+
+.monto {
+  color: #26c2ad;
+  font-size: 40px;
+}
+
+.total {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reset {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.reset > button {
+  font-weight: bold;
+  font-size: 20px;
+  color: #004648;
+  background-color: #26c2ad;
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+}
