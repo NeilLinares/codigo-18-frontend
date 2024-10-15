@@ -5,7 +5,7 @@
 
 body{
     background-color: #090E16;
-    font-family: Helvetica;
+    font-family: "Raleway", sans-serif;
     color: white;
 }
 
@@ -35,7 +35,7 @@ nav{
 }
 
 main{
-    height: 80vh;
+    height: 75vh;
     padding: 30px;
     display: flex;
     justify-content: space-around;
@@ -98,13 +98,82 @@ main{
     text-decoration: none;   
 }
 
-section{
+.divider{
+    border: solid rgba(123, 74, 226, 20%) 0.5px;
+}
+
+.container-cards{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.container-cards > div{
+    border: solid rgba(123, 74, 226, 5%);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 246px;
+    height: 200px;
+}
+
+.container-cards > div:nth-child(2){
+    background-color: rgba(123, 74, 226, 10%);
+    border: none;
+}
+
+.container-cards > div > p{
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.container-cards > div > h3{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.container-summary{
+    background-color: rgba(123, 74, 226, 10%);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    width: 878px;
+    height: 110px;
+    /*margin auto centra el elemento de forma automatica*/
+    margin: auto;
+    margin-bottom: 60px;
+    color: #7b4ae2;
+}
+
+.container-summary > div{
+    width: 246px;
+    text-align: center;
+}
+
+.container-summary > div > p:first-child{
+    font-weight: 300;
+}
+
+.container-summary > div > p:last-child{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.sobre-mi{
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
 }
 
 .foto-perfil > img{
-    border-radius: 50%;
+    border-radius: 25%;
 }
 
 .information > h2{
