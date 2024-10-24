@@ -56,11 +56,8 @@ main{
     color: hsla(0, 0%, 100%, 0.6);
  }
 
-div > img{
+.img{
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
-    background-image: linear-gradient(hsl(277, 64%, 61%),hsl(277, 64%, 61%), url(../images/image-header-desktop.jpg));
-}
-.color > img{
-    background: hsl(277, 64%, 61%, 0.5);
+    background-color: hsl(277, 64%, 61%, 0.5);
 }

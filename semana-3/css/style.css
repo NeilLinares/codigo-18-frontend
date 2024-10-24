@@ -1,0 +1,515 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Fraunces", sans-serif;
+}
+.font-barlow {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+.text-center {
+  text-align: center;
+}
+.flex{
+  display: flex;
+}
+nav {
+  background-color: #3dbeff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.btn-menu {
+  /*par quitar el color del boton*/
+  background-color: transparent;
+  /*quitar los bordes*/
+  border: none;
+  /*cambiar el estilo de mouse*/
+  cursor: pointer;
+}
+.menu {
+  display: none;
+}
+
+main {
+  height: 70vh;
+  /*usamos una imagen como fondo*/
+  background: url(../assets/mobile/image-header.jpg);
+  /*hac que no se repita la imagen de fondo*/
+  background-repeat: no-repeat;
+  /*posiciones del fondo*/
+  background-position: center;
+  /*agranda la foto del ancho que queremos, sin que se repita la imagen*/
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  /*uppercase convertir en mayuscula, lowercase convertir en minuscula*/
+  text-transform: uppercase;
+  font-size: 50px;
+  padding-top: 60px;
+}
+.arrow-down {
+  /*inline no ocupa todo el ancho. block ocupa todo el ancho*/
+  /*convertimos a bloque*/
+  display: block;
+  /*centramos de forma automatica*/
+  margin: auto;
+  margin-top: 35px;
+  height: 140px;
+}
+
+.bg-egg {
+  height: 50vh;
+  background: url(../assets/mobile/image-transform.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container-egg {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+}
+.container-egg > div > h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+.container-egg > div > p {
+  font-size: 18px;
+  /*da separacion entre las palabras del texto*/
+  line-height: 1.5;
+  color: hsl(232, 10%, 55%);
+}
+.link {
+  display: block;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.bg-stand {
+  height: 50vh;
+  background: url(../assets/mobile/image-stand-out.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container-stand {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+}
+.container-stand > div > h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+.container-stand > div > p {
+  font-size: 18px;
+  /*da separacion entre las palabras del texto*/
+  line-height: 1.5;
+  color: hsl(232, 10%, 55%);
+}
+.link {
+  display: block;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.bg-cherry{
+  background: url(../assets/mobile/image-graphic-design.jpg);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+}
+
+.bg-cherry > div{
+  margin-bottom: 80px;
+  color: hsl(167, 40%, 24%);
+}
+
+.bg-cherry > div > h2{
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.bg-cherry > div > p {
+  font-size: 18px;
+  padding: 14px;
+  line-height: 1.5;
+}
+
+.bg-photography{
+  background: url(../assets/mobile/image-photography.jpg);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+}
+
+.bg-photography > div{
+  margin-bottom: 80px;
+  color: hsl(198, 62%, 26%);
+}
+
+.bg-photography > div > h2{
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.bg-photography > div > p {
+  font-size: 18px;
+  padding: 14px;
+  line-height: 1.5;
+}
+
+.client > h2{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+  /*Espaciado entre letras*/
+  letter-spacing: 5px;
+  color: hsl(232, 10%, 55%);
+}
+
+.emily{
+  margin-bottom: 15%;
+}
+
+.emily > img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 6%;
+}
+
+.emily > p{
+  font-size: 20px;
+  margin-bottom: 10%;
+  line-height: 1.5;
+  color: hsl(213, 9%, 39%);
+}
+
+.container-name > p:first-child{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+
+.container-name > p:last-child{
+  color: hsl(232, 10%, 55%);
+}
+
+.thomas{
+  margin-bottom: 15%;
+}
+
+.thomas > img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 6%;
+}
+
+.thomas > p{
+  font-size: 20px;
+  margin-bottom: 10%;
+  line-height: 1.5;
+  color: hsl(213, 9%, 39%);
+}
+
+.container-name > p:first-child{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+
+.container-name > p:last-child{
+  color: hsl(232, 10%, 55%);
+}
+
+.jennie{
+  margin-bottom: 15%;
+}
+
+.jennie > img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 6%;
+}
+
+.jennie > p{
+  font-size: 20px;
+  margin-bottom: 10%;
+  line-height: 1.5;
+  color: hsl(213, 9%, 39%);
+}
+
+.container-name > p:first-child{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+
+.container-name > p:last-child{
+  color: hsl(232, 10%, 55%);
+}
+
+.section-mini{
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-mini > div {
+  height: 200px;
+  width: 50%;
+}
+
+.bg-mini-milk{
+  background: url(../assets/mobile/image-gallery-milkbottles.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-mini-orange{
+  background: url(../assets/mobile/image-gallery-orange.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-mini-cone{
+  background: url(../assets/mobile/image-gallery-cone.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-mini-sugar{
+  background: url(../assets/mobile/image-gallery-sugar-cubes.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer{
+  height: 50vh;
+  background-color: #90d4c5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.footer-logo{
+  width: 200px;
+  filter: invert(39%) sepia(6%) saturate(3640%) hue-rotate(116deg) brightness(70%) contrast(86%);
+}
+.footer-menu{
+  font-size: 25px;
+  color: hsl(167, 40%, 35%);
+  list-style: none;
+  gap: 70px;
+}
+
+.footer-social-media {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/*small*/
+@media (min-width: 640px) {
+}
+/*medium*/
+@media (min-width: 768px) {
+}
+/*large*/
+@media (min-width: 1024px) {
+}
+/*xl*/
+@media (min-width: 1280px) {
+  main {
+    background: url(../assets/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .btn-menu {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    font-family: "Barlow", sans-serif;
+  }
+  .menu > li > a {
+    text-decoration: none;
+    color: white;
+  }
+  .menu > li:last-child {
+    background-color: white;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 24px;
+  }
+  .menu > li:last-child > a {
+    font-family: "Fraunces", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .section-egg {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 70vh;
+  }
+  .bg-egg {
+    flex: 1;
+    background: url(../assets/desktop/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+  .container-egg {
+    flex: 1;
+    height: 100%;
+    padding: 0;
+  }
+  .container-egg > div {
+    display: block;
+    margin: auto;
+  }
+  .container-egg > div > * {
+    text-align: left;
+  }
+
+  /*-----  SECTION STAND-OUT  ----*/
+
+  .section-stand {
+    display: flex;
+    height: 70vh;
+  }
+  .bg-stand {
+    flex: 1;
+    background: url(../assets/desktop/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+  .container-stand {
+    flex: 1;
+    height: 100%;
+    padding: 0;
+  }
+  .container-stand > div {
+    display: block;
+    margin: auto;
+    width: 70%;
+  }
+  .container-stand > div > * {
+    text-align: left;
+  }
+
+  /*  Cherry  */
+
+  .container-fruit{
+    display: flex;
+    height: 70vh;
+  }
+
+  .container-fruit > section > div{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bg-cherry{
+    background: url(../assets/desktop/image-graphic-design.jpg);
+    flex: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+
+  .bg-photography{
+    background: url(../assets/desktop/image-photography.jpg);
+    flex: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+
+  /*CLIENTES*/
+
+  .container-client{
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    height: 40vh;
+  }
+
+  /*imagenes mini*/
+  .section-mini > div{
+    height: 600px;
+    width: 25%;
+  }
+
+  .bg-mini-milk{
+    background: url(../assets/desktop/image-gallery-milkbottles.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-mini-orange{
+    background: url(../assets/desktop/image-gallery-orange.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-mini-cone{
+    background: url(../assets/desktop/image-gallery-cone.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-mini-sugar{
+    background: url(../assets/desktop/image-gallery-sugarcubes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+}
+/*2xl*/
+@media (min-width: 1536px) {
+}
