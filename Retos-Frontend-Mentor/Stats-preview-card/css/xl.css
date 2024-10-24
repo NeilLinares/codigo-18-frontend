@@ -1,0 +1,45 @@
+@media (min-width: 1280px) {
+  main {
+    margin-top: 150px;
+    margin-left: 130px;
+    margin-right: 130px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom-right-radius: 16px;
+  }
+
+  .imagen {
+    flex: 1;
+    background: url(../images/image-header-desktop.jpg);
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 0px;
+  }
+
+  .container{
+    flex: 1;
+    margin: 60px;
+  }
+  h1{
+    font-size: 60px;
+    text-align: left;
+  }
+  .description{
+    width: 55%;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 20px;
+  }
+  .status{
+    margin-top: 50px;
+    text-align: left;
+    width: 65%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 45px;
+  }
+}

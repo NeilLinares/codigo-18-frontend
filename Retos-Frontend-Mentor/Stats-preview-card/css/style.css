@@ -1,63 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: hsl(233, 47%, 7%);
+body {
+  background-color: hsl(233, 47%, 7%);
 }
-main{
-    color: white;
-    margin: 13%;
-    background-color: hsl(244, 38%, 16%);
-    border-radius: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+main {
+  margin: 40px;
+  border-radius: 16px;
+  background-color: hsl(244, 38%, 16%);
 }
+
+.imagen {
+  background: url(../images/image-header-mobile.jpg);
+  filter: invert(18%) sepia(8%) saturate(4000%) hue-rotate(225deg)
+    brightness(70%) contrast(89%);
+  height: 30vh;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .container{
-    margin-left: 10%;
+    height: 55vh;
 }
 
-.title{
-    width: 70%;
+h1{
     color: white;
     font-weight: bold;
-    font-size: 50px;
-    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 45px;
+    margin-right: 45px;
 }
- .palabra{
-    color: hsl(277, 64%, 61%);
+
+.palabra{
+    color: hsl(277, 64%, 65%);
  }
 
  .description{
-    width: 50%;
+    text-align: center;
     color: hsla(0, 0%, 100%, 0.75);
-    font-size: 17px;
-    margin-bottom: 40px;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 45px;
+    margin-right: 45px;
+    line-height: 1.5;
  }
 
  .status{
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
+    margin-top: 16px;
+    height: 30vh;
+    color: white;
+    text-align: center;
  }
 
- .number{
-    font-size: 28px;
+ .container-status > p:first-child{
+    margin-top: 20px;
+    font-size: 30px;
     font-weight: bold;
-    margin-bottom: 10px;
  }
 
- .name-stats{
+ .container-status > p:last-child{
+    margin-top: 10px;
+    text-transform: uppercase;
     font-size: 12px;
+    letter-spacing: 3px;
     color: hsla(0, 0%, 100%, 0.6);
  }
-
-.img{
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
-    background-color: hsl(277, 64%, 61%, 0.5);
-}
