@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+}
+
+.container-1{
+    height: 90vh;
+    /* el contenido se mantenga dentro del contendor*/
+    overflow: auto;
+    background-color: #EEF5FF;
+}
+
+.bg-sidebar{
+    position: absolute;
+}
+
+.botones-numericos{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.botones-numericos > button{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0.5px solid white;
+}
+
+.botones-numericos > button:hover{
+    background-color: #BFE0FF;
+    color: black;
+}
+
+.seccion-personal{
+    position: relative;
+    background-color: white;
+    margin: 20px;
+    height: 65vh;
+    border-radius: 16px;
+}
+
+.informacion{
+    padding: 20px;
+}
+h1{
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.descripcion{
+    line-height: 1.5;
+    width: 80%;
+    margin-bottom: 15px;
+    color: #A0A2A7;
+}
+
+.checkbox > p{
+    font-size: 20px;
+    color:  #172736;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.checkbox > input{
+    border-style: none;
+    border: 0.5px solid ;
+    border-color: #DBDBDD;
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    color: #A0A2A7;
+}
+
+.container-2{
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.boton-fijo{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: white;
+    background-color: #03295A;
+}
