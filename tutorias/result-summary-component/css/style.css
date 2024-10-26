@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: white;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    box-shadow: 15px 15px 20px hsl(241, 81%, 97%);
+}
+
+.section-result{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background: linear-gradient(0deg, hsl(241, 81%, 54%) 40%, hsl(252, 100%, 67%) 100%);
+    height:40vh;
+    border-radius: 32px;
+}
+.result{
+    padding: 20px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.result > h1{
+    color: hsl(241, 100%, 89%);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.puntuacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(0deg,hsla(241, 72%, 46%, 0), hsla(248, 72%, 46%, 5));
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.puntuacion > p:first-child{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.puntuacion > p:last-child{
+    color: hsl(241, 100%, 80%);
+    font-size: 12px;
+}
+
+h2{
+    color: white;
+    margin-bottom: 10px;
+}
+ .description{
+    color: hsl(241, 100%, 80%);
+ }
+
+.section-percent{
+    flex: 1;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    height: 40vh;
+    padding: 25px;
+    padding-left: 40px;
+}
+
+h3{
+    margin-bottom: 20px;
+}
+
+.imagen-reaction{
+    display: flex;
+}
+.puntuacion-summary{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.caja-1{
+    background-color: hsl(0, 100%, 97%);
+}
+.caja-2{
+    background-color: hsl(39, 100%, 97%);
+}
+.caja-3{
+    background-color: hsl(166, 100%, 97%);
+}
+.caja-4{
+    background-color: hsl(234, 85%, 97%);
+}
+
+span{
+    color: hsl(240, 1%, 71%);
+}
+
+.boton{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303B59;
+    color: white;
+}
+
