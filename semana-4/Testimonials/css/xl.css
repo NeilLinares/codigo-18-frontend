@@ -1,0 +1,45 @@
+@media (min-width: 1280px){
+    main{
+        display: grid;
+        grid-template-areas: 
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+        height: 100vh;
+        width: 1440px;
+        margin: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .container-daniel{
+        height: 100%;
+    }
+    .container-daniel > h2{
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .container-daniel > p{
+        font-size: large;
+        text-align: left;
+    }
+
+    .container-jonathan{
+        height: 100%;
+    }
+    .container-jeanette{
+        height: 100%;
+    }
+    .container-patrick{
+        height: 100%;
+    }
+    .container-kira{
+        height: 100%;
+    }
+    .container-kira > h2{
+        font-size: 30px;
+    }.container-kira > p{
+        font-size: x-large;
+        text-align: left;
+    }
+
+}
