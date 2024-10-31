@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
+
+main{
+    display: grid;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+    grid-template-areas: 
+    "daniel"
+    "jonathan"
+    "jeanette"
+    "patrick"
+    "kira"
+    ;
+}
+
+.container-daniel{
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    border-radius: 12px;
+    padding: 25px;
+    grid-area: daniel;
+}
+.container-daniel::after{
+    content: "";
+    background: url(../assets/images/bg-pattern-quotation.svg);
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: -1;
+}
+
+.container-profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.container-profile > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+.container-profile > div > h3{
+    font-size: 14px;
+}
+.container-profile > div > p{
+    font-size: 12px;
+    color: #9C9FA4;
+}
+.title{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.description{
+    margin-top: 20px;
+    color: #9C9FA4;
+}
+
+
+.container-jonathan{
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    border-radius: 12px;
+    padding: 25px;
+    grid-area: jonathan;
+}
+
+.container-jeanette{
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    border-radius: 12px;
+    padding: 25px;
+    grid-area: jeanette;
+}
+
+.container-patrick{
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+    border-radius: 12px;
+    padding: 25px;
+    grid-area: patrick;
+}
+
+.container-kira{
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    border-radius: 12px;
+    padding: 25px;
+    grid-area: kira;
+}
